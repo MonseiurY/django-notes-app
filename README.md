@@ -1,5 +1,5 @@
 
-# Setting up Jenkins and CI/CD Pipeline for Django Notes App
+# Setting up Declarative Jenkins and CI/CD Pipeline for Django Notes App
 
 This documentation provides step-by-step instructions on how to set up Jenkins, Docker, and a CI/CD pipeline to build, push, and deploy the Django Notes App using GitHub webhooks.
 
@@ -93,9 +93,10 @@ Navigate to your EC2 instance's public IP on port 8080 in your web browser.
 1. Click "New Item" to create a new pipeline job.
 2. Name the pipeline job (e.g., "Notes-django-app-CICD-pipeline") and choose "Pipeline" as the type.
 3. Under the "Pipeline" section, select "Pipeline script from SCM" for "Definition".
-4. Choose "Git" as the SCM and provide your Django Notes App repository URL.
-5. Set the branch to "main".
-6. Save the pipeline job.
+4. Use Jenkinsfile where the declararive pipeline script is written.
+5. Choose "Git" as the SCM and provide your Django Notes App repository URL.
+6. Set the branch to "main".
+7. Save the pipeline job.
 
 ### 12. Configure Docker Compose
 Install Docker Compose on the EC2 instance:
